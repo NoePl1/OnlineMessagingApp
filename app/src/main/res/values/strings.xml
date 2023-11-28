@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">OnlineMessagingApp</string>
+
+    <string name="textBar_username">Username</string>
+
+    <string name="textBar_password">password</string>
+
+    <string name="button_signup">Sign-Up</string>
+
+    <string name="button_login">Log-In</string>
+
+    <string name="text_or">- OR - </string>
+
+    <string name="button_picture">Add \n profile \n picture</string>
+
+    <string name="button_goback">Go Back</string>
+
+    <string name="button_send">SEND</string>
+
+    <string name="text_lastmsg">latest message</string>
+
+
+
+</resources>

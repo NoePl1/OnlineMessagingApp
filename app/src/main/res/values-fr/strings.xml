@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OnlineMessagingApp</string>
+
+    <string name="textBar_username">Utilisateur</string>
+
+    <string name="textBar_password">mot de passe</string>
+
+    <string name="button_signup">S\'inscrire</string>
+
+    <string name="button_login">Se connecter</string>
+
+    <string name="text_or">- OU - </string>
+
+    <string name="button_picture">Ajouter \n une photo \n de profil</string>
+
+    <string name="button_goback">Retour</string>
+
+    <string name="button_send">ENVOYER</string>
+
+    <string name="text_lastmsg">dernier message</string>
+
+</resources>

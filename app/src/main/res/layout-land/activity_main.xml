@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCDE67"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/username_editText_register"
+        android:layout_width="300dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/textBar_username"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/email_editText_register"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/email_editText_register"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email_editText_register"
+        android:layout_width="300dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="e-mail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/password_editText_register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/password_editText_register"
+        app:layout_constraintTop_toBottomOf="@+id/username_editText_register" />
+
+    <EditText
+        android:id="@+id/password_editText_register"
+        android:layout_width="300dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="104dp"
+        android:background="@drawable/rounded_edittext"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/textBar_password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/selectPhoto_button"
+        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_editText_register" />
+
+    <Button
+        android:id="@+id/signUp_button"
+        android:layout_width="299dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/blue_A"
+        android:text="@string/button_signup"
+        app:layout_constraintEnd_toEndOf="@+id/password_editText_register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/password_editText_register"
+        app:layout_constraintTop_toBottomOf="@+id/password_editText_register" />
+
+    <Button
+        android:id="@+id/logIn_button"
+        android:layout_width="102dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/blue_A"
+        android:text="@string/button_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/text_or"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/signUp_button"
+        app:layout_constraintStart_toStartOf="@+id/signUp_button"
+        app:layout_constraintTop_toBottomOf="@+id/signUp_button" />
+
+    <Button
+        android:id="@+id/selectPhoto_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/rounded_selectphoto"
+        android:text="@string/button_picture"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/selectPhoto_imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:civ_border_color="@color/blue_A"
+        app:civ_border_width="3dp"
+        app:layout_constraintEnd_toEndOf="@+id/selectPhoto_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/selectPhoto_button"
+        app:layout_constraintTop_toTopOf="@+id/selectPhoto_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
